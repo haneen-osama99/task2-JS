@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+}
+.userSection{
+    padding-top: 45px;
+}
+.container{
+    width: calc(100% - 350px);
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap : 15px;
+}
+
+.usersCard{
+    width: calc((100% - 30px) / 3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.userData{
+    padding: 25px;
+}
+.userName{
+    padding-bottom: 12px;
+}
+.usersCard .icon{
+    padding-right: 12px;
+}
+.userAddress{
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.userPhone{
+    padding-bottom: 12px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.userWebsite{
+    padding-bottom: 12px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.companyName{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+.companyDetails{
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width : 1024px){
+    .usersCard{
+        width: calc((100% - 15px) / 2);
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: calc(100% - 150px);
+    }
+}
+@media screen and (max-width :600px){
+    .container{
+        width: calc(100% - 100px);
+    }
+    .usersCard{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :320px){
+    .container{
+        width: calc(100% - 30px);
+    }
+    .usersCard{
+        width: 100%;
+    }
+}
+
+
+
